@@ -1,3 +1,10 @@
+
+A basic react app that queries the Crypto Compare API and displays the results, screenshot:
+
+![ScreenShot](
+https://github.com/coder787/coin-finder/blob/master/src/img/coin-finder-screenshot.JPG)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
