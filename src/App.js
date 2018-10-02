@@ -23,6 +23,10 @@ class App extends React.Component {
     console.log("message is now ", data['Message']);
     if (data.Response === 'Error') {
       this.setState({
+        price: undefined,
+        percentage: undefined,
+        low: undefined,
+        high: undefined,
         error: data['Message']
       });
     } else if (coin && currency) {
