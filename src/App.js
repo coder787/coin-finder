@@ -19,8 +19,13 @@ class App extends React.Component {
     const currency = e.target.elements.currency.value;
     const api_call = await fetch(`https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${coin}&tsyms=${currency}`);
     const data = await api_call.json();
-    console.log(data);
-    if (coin && currency) {
+    console.log("data is now ", data);
+    console.log("message is now ", data['Message']);
+    if (data.Response === 'Error') {
+      this.setState({
+        error: data['Message']
+      });
+    } else if (coin && currency) {
       this.setState({
         price: data['DISPLAY'][coin][currency]['PRICE'],
         percentage: data['DISPLAY'][coin][currency]['CHANGEPCT24HOUR'],
