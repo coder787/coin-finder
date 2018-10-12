@@ -1,5 +1,10 @@
 
-A basic react app that queries the Crypto Compare API and displays the results, screenshot:
+A basic react app that queries the Crypto Compare API and displays the results, 
+
+demo website:
+https://coder787-coin-finder.glitch.me/
+
+screenshot:
 
 ![ScreenShot](
 https://github.com/coder787/coin-finder/blob/master/src/img/coin-finder-screenshot.JPG)
